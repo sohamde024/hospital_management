@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon"   href="medi-core.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCore</title>
+    <style>
+        body {
+            background-image: url(front_1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .btn {
+            padding: 20px 40px;
+            border-radius: 30px;
+            background-color: rosybrown;
+            border: 2px solid black;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+            text-transform: capitalize;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            width: 250px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #b76e79;
+            transform: scale(1.05);
+        }
+
+        .btn svg {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+       
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+            }
+
+            .btn {
+                width: 200px;
+                padding: 15px 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            .btn {
+                width: 150px;
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Welcome to MediCore</div>
+        <div class="btn-container">
+            <a href="admin_login.html" class="btn">Admin Login 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+            </a>
+            <a href="admin.html" class="btn">Front Desk
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+            </a>
+            <a href="doctor_space.html" class="btn">Doctor's Space
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

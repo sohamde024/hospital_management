@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon"   href="medi-core.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E0F7FA;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: rosybrown;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.logout-btn a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn a:hover {
+    color: inherit;
+    background-color: #ddd;
+}
+
+
+.main-content {
+    width: 70%;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.tile {
+    width: 180px;
+    height: 180px;
+    background-color: rosybrown;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.tile img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.tile p {
+    color: #000;
+    font-size: 16px;
+}
+
+#patient-manager a{
+    text-decoration: none;
+    color: #000;
+}
+#patient-manager a p:hover{
+    color: white;
+}
+#fdesk-manager a{
+    text-decoration: none;
+    color: #000;
+}
+#fdesk-manager a p:hover{
+    color: white;
+}
+#doctor-manager a {
+    text-decoration: none;
+    color: #000;
+}
+#doctor-manager a p:hover{
+    color: white;
+}
+#appointments a{
+    text-decoration: none;
+    color: #000;
+}
+#appointments a p:hover{
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="admin.jpg" alt="Admin Portal Logo">
+            </div>
+            <h2>Doctor Space</h2>
+            <button class="logout-btn">
+                <a href="front.html"> Logout </a>
+            </button>
+            
+        </div>
+
+        <div class="main-content">
+            <div class="tile" id="patient-manager">
+                <img src="appoinment view.jpg" alt="My Appoinments">
+              <a href="search_by_department.html">  <p>My Appointments</p> </a>
+            </div>
+           
+            <div class="tile" id="doctor-manager">
+                <img src="doc.jpg" alt="My Information">
+                <a href="doc_detail.php"><p>My Information</p></a> 
+            </div>
+            
+            
+            
+            <div class="tile" id="appointments">
+                <img src="doc.jpg" alt="doctor details update">
+              <a href="edit_my_info.php">  <p>Doctor details update</p> </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

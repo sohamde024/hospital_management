@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon"   href="medi-core.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Doctors by Department</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+            padding: 20px 10px;
+        }
+        label, select, button {
+            font-size: 16px;
+            margin: 10px 0;
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #department{
+            padding: 10px 10px;
+            width: 200px;
+        }
+        button{
+            padding: 10px 10px;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .home {
+            margin-top: 20px;
+        }
+        .home a {
+            padding: 10px 20px;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Select Department to View Doctors</h2>
+<form action="view_doctors_by_department.php" method="GET">
+    <label for="department" style="color: black;" > <b> Select Department: </b></label>
+    <select id="department" name="department">
+        <option value="">Select</option>
+        <option value="General Physician">General Physician</option>
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Neurologist">Neurologist</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Gynecologist">Gynecologist</option>
+        <option value="ENT Specialist">ENT Specialist</option>
+        <option value="Psychiatrist">Psychiatrist</option>
+    </select>
+    <button type="submit">View Doctors</button>
+</form>
+
+<div class="home">
+    <a href="admin.html">Return</a>
+</div>
+
+</body>
+</html>
